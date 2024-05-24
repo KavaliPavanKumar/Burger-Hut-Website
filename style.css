@@ -1,0 +1,181 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav ul li a:hover{
+    color: rgb(209, 150, 12);
+}
+nav ul li a.cta {
+    background-color: #ff6f00;
+    border-radius: 5px;
+}
+
+#hero {
+    background: url('/images/burger1.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+#hero .hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#hero .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000;
+}
+#about img{
+    height: 300px;
+}
+#about p:hover{
+    color: rgb(215, 153, 8);
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+#menu{
+    margin-top: 100px;
+}
+.btn-primary {
+    margin-bottom: 100px;
+    background-color: #ff6f00;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.burger-grid, .menu-grid, .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.testimonial-item img{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.burger-item, .menu-item, .testimonial-item ,img{
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 200px;
+    margin-bottom: 10px;
+}
+#featured-burgers{
+    margin-bottom: 20px;
+}
+.burger-item:hover, .menu-item:hover, .testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+.offer-banner {
+    background-color: #ff6f00;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer .social-media a img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+#contact-form, #newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea, #newsletter-form input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form button, #newsletter-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff6f00;
+    color: #fff;
+    font-size: 1em;
+}
+
+#contact-form button:hover, #newsletter-form button:hover {
+    background-color: #e65c00;
+}
